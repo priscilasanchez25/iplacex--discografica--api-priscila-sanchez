@@ -14,7 +14,7 @@ FROM lemuridaelabs/openjdk-java21-jdk:latest
 
 WORKDIR /app
 
-COPY --from=builder /app/build/libs/*.jar discografia.jar
+COPY --from=builder /app/build/libs/*.jar discografia-1.0.jar
 
 EXPOSE 443
 
