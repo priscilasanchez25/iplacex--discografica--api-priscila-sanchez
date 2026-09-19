@@ -10,7 +10,7 @@ COPY src ./src
 RUN gradle build --no-daemon
 
 # STAGE 2: Run
-FROM openjdk:21
+FROM openjdk:21-rc-jdk
 
 WORKDIR /app
 
