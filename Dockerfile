@@ -7,8 +7,7 @@ COPY ./build.gradle .
 COPY ./settings.gradle .
 COPY src ./src
 
---RUN gradle build --no-daemon
-RUN gradle build --no-daemon -x test
+ RUN gradle build --no-daemon -x test
 
 
 # STAGE 2: Run
